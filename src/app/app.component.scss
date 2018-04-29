@@ -1,0 +1,32 @@
+@import '~assets/scss/_container';
+
+.title{
+  text-align: center;
+  width: 100%;
+  padding: $gutter * .5;
+  background:color(primary);
+  color:color(white);
+  margin-bottom: $gutter !important;
+}
+.main{
+  &-layout{
+    @include layout;
+  }
+}
+.card{
+  @include card;
+  width: 100%;
+  margin-bottom: 3% !important;
+  margin-left: 3% !important;
+  margin-right: 3% !important;
+  @include desde($medium){
+    margin-bottom: 1% !important;
+    margin-left: 1% !important;
+    margin-right: 1% !important;
+    margin-right: 0% !important;
+    width: 48.5%;
+  }
+  /*@include desde($x-large) {
+    width: 32%;
+  }*/
+}

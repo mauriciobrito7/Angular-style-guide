@@ -1,0 +1,59 @@
+@import './_tools.scss';
+
+/* Aqui se guardarab las variables */
+
+// Weight para las fuentes
+$thin:100;
+$light:300;
+$normal:400;
+$medium:500;
+$bold:700;
+
+// Gutter
+$gutter:1em;
+$radius: 5px;
+// Breakpoints
+$small:480px;
+$medium:768px;
+$large:1025px;
+$x-large:1400px;
+
+/*
+@font-face {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: $normal;
+    src: url('~/../fonts/Roboto-Medium.ttf');
+ }
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900,900i|Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Roboto:300,300i,400,400i,500,500i,700,700i,900,900i');
+$font-text:'Roboto';
+$font-Montserrat:'Montserrat';
+$font-Lato:'Lato';
+
+$font-size:em(16px);
+$h3-size: $font-size * 1.15;
+$h2-size: $font-size * 1.35;
+$h1-size: $font-size * 1.7;
+
+// Colores
+$colors:(
+    background:#cccccc,
+    primary:#0072ff,
+    secondary:#4776e6,
+    white: #ffffff,
+    black: #191919,
+    card: #2f2f31,
+    grey: #cccccc,
+    success:#2ECC71,
+    alert: #F89406,
+    error: #f22613,
+    info:#123987,
+    special: #9A12B3
+);
+
+@function color($color) {
+  @return map-get($colors, $color);
+}
+

@@ -1,0 +1,14 @@
+@import '~assets/scss/_container';
+
+.ty{
+  &-label{
+    background: color(special);
+    padding: $radius;
+    border-radius: $radius;
+    color: color(white);
+  }
+  &__item{
+    margin : $gutter auto !important;
+  }
+
+}
